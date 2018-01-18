@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.25.5.217)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=developmu)(SERVER=DEDICATED)))" 
+    driverClass="oracle.jdbc.driver.OracleDriver" 
+    password="uniorder_dml" 
+    userId="uniorder_dml" />
+    <javaModelGenerator targetPackage="com.wxfeng.mybatis.uniorder" targetProject="firstprogram/src/main/java" />
+    <sqlMapGenerator targetPackage="com.wxfeng.mybatis.mapper" targetProject="firstprogram/src/main/resource" />
+    <javaClientGenerator targetPackage="com.wxfeng.mybatis.dao" targetProject="firstprogram/src/main/java" type="XMLMAPPER" />
+    <table schema="uniorder" tableName="ORDER_INFO"></table>
+     <table schema="uniorder" tableName="AIR_ORDER_INFO"></table>
+     <table schema="uniorder" tableName="AIR_PAX_SEG"></table>
+     <table schema="uniorder" tableName="AIR_PAX_INFO"></table>
+     <table schema="uniorder" tableName="AIR_PNR_INFO"></table>
+     <table schema="uniorder" tableName="AIR_TKT_INFO"></table>
+  </context>
+</generatorConfiguration>
